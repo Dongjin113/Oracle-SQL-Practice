@@ -1,0 +1,7 @@
+--[ANSI - SQL] -- join 테이블을 묶어주는것 
+select * from student s left join enrol e
+on s.sno= e.sno ;
+
+--[T-SQL, PL-SQL]
+select * from studnet , enrol
+where student.sno = enrol.sno;

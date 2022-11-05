@@ -1,0 +1,10 @@
+줌수업 주소 https://us02web.zoom.us/j/4797829046
+
+
+conn 연결
+sql> conn /as sysdba <--- 시스템 데이터베이스 최고권한에 접속
+SQL> alter user system identified by 1234; <system 의 암호
+conn system/1234 - 권한부여
+create user young identified by 1234 <-- young 계정에 암호 1234
+grant connect , resource, dba to young; <-- 롤 부여하기
+conn young/1234

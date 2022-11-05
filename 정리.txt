@@ -1,0 +1,31 @@
+insert into student(sno,sname,year,dept)
+values('100','나연묵','4','컴퓨터');
+
+
+
+create table student1(
+sno varchar2(3) ,
+sname nvarchar2(10),
+year number(1),
+dept nvarchar2(10),
+primary key(sno));
+
+
+DDL - Create, Drop (데이터정의어)
+DML - select(보는것), update, insert, delete (조작어)
+DCL - GRANT, REVOKE
+TCL - COMMIT(확정), ROLLBACK(원위치)
+
+정확한 값을 받기위해 제약조건(=유효성검사 컨트롤)을 사용
+
+fk = 외래키 ( foreign key ) 
+1. 다른테이블의 pk(기본키)를 참조(다른테이블이 기본값이 있는 것만 사용가능)하는것 
+2. 정확한 값이아니면 아예 끌어오지못함
+
+pk = 기본키(primary key)
+1. 유일한값 (중복불가)
+2. not null
+
+시스템 테이블 데이터임포트 로컬파일 찾아보기 엑셀파일가져오기
+
+첫페이지 연락처 이름 이메일
